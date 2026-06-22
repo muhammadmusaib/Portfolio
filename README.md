@@ -11,7 +11,7 @@
 
 This is a fully responsive personal portfolio website for **Mohd Musaib**, a Detail-oriented Data Analyst with hands-on experience in Python, SQL, Power BI, Tableau, and MS Excel.
 
-The portfolio is designed to replace a traditional resume with a visually rich, interactive web page that recruiters and hiring managers can explore and share. It is built entirely in **one HTML file** with no build tools, no frameworks, and no dependencies — just open it in a browser and it works.
+The portfolio is designed to replace a traditional resume with a visually rich, interactive web page that recruiters and hiring managers can explore and share. It is built entirely in **HTML, Css, JavaScript** with no build tools, no frameworks, and no dependencies — just open it in a browser and it works.
 
 ---
 ## 🛠 Tech Stack
