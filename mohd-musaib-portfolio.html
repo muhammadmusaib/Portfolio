@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohd Musaib — Data Analyst Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- PARTICLES CANVAS -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Mohd Musaib.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <!-- Floating data bits -->
+    <span class="data-bit" style="left:62%;top:20%;animation-delay:0s;">SELECT *</span>
+    <span class="data-bit" style="left:72%;top:55%;animation-delay:1.5s;">df.groupby()</span>
+    <span class="data-bit" style="left:80%;top:35%;animation-delay:3s;">SUM(revenue)</span>
+    <span class="data-bit" style="left:55%;top:70%;animation-delay:4.5s;">DAX MEASURE</span>
+    <span class="data-bit" style="left:85%;top:75%;animation-delay:2s;">EDA →</span>
+
+    <svg class="chart-line-svg" viewBox="0 0 700 300" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path class="chart-fill" d="M0,250 L80,220 L160,200 L220,230 L300,160 L380,130 L450,150 L520,90 L600,60 L700,40 L700,300 L0,300 Z"/>
+      <path class="chart-path" d="M0,250 L80,220 L160,200 L220,230 L300,160 L380,130 L450,150 L520,90 L600,60 L700,40"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="pulse-dot"></div>
+      Open to Opportunities
+    </div>
+    <h1 class="hero-name">Mohd<br><span class="glitch">Musaib</span></h1>
+    <p class="hero-title">Data Analyst &amp; <strong>Insight Engineer</strong></p>
+    <p class="hero-desc">
+      Turning raw data into decisions. Skilled in Python, SQL, Power BI &amp; Tableau — I build dashboards, uncover trends, and translate complex datasets into clear, actionable business intelligence.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+      <a href="#projects" class="btn-secondary"><i class="fas fa-chart-line"></i> View Projects</a>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number" data-target="49" data-suffix="K+">0</div>
+        <div class="stat-label">Records Analyzed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="3" data-suffix="+">0</div>
+        <div class="stat-label">End-to-End Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="70" data-suffix="%">0</div>
+        <div class="stat-label">Sales Category Lift</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="3" data-suffix="">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- WHY HIRE ME -->
+<section id="why">
+  <div class="section-eyebrow">Value Proposition</div>
+  <h2 class="section-title">Why Hire <span>Me?</span></h2>
+  <div class="why-grid">
+    <div class="why-card fade-up">
+      <div class="why-icon"><i class="fas fa-database"></i></div>
+      <h3>End-to-End Data Pipeline</h3>
+      <p>From raw data extraction and cleaning to dashboards and business recommendations — I handle the full analytics workflow independently.</p>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-icon"><i class="fas fa-chart-bar"></i></div>
+      <h3>Visual Storytelling</h3>
+      <p>I don't just build charts — I craft narratives. Every Power BI dashboard and Seaborn visualization is designed to answer a specific business question.</p>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-icon"><i class="fas fa-search"></i></div>
+      <h3>Investigative Mindset</h3>
+      <p>My professional role in cybercrime data management has sharpened my attention to accuracy, compliance, and data integrity under pressure.</p>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-icon"><i class="fas fa-bolt"></i></div>
+      <h3>Fast &amp; Actionable Output</h3>
+      <p>I prioritize insights that drive decisions. My analyses consistently surface KPIs, top-performing segments, and concrete recommendations.</p>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-icon"><i class="fas fa-code"></i></div>
+      <h3>Code + No-Code Versatility</h3>
+      <p>Comfortable with Python scripting for EDA and SQL for querying, as well as Excel Pivot Tables and Power BI for stakeholder-friendly outputs.</p>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-icon"><i class="fas fa-graduation-cap"></i></div>
+      <h3>AI-Enhanced Skills</h3>
+      <p>Certified in AI-Powered Data Analysis, staying current with how machine learning and AI tools are reshaping the analyst toolkit.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-eyebrow">Career</div>
+  <h2 class="section-title">Work <span>Experience</span></h2>
+  <div class="timeline">
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div class="timeline-role">Associate Technical Support</div>
+          <span class="timeline-badge">Current Role</span>
+        </div>
+        <div class="timeline-company">Shri Ram ComSoft Pvt. Ltd. (SRCOMSOFT) — Jabalpur, M.P.</div>
+        <div class="timeline-date"><i class="fas fa-calendar-alt" style="color:var(--cyan);margin-right:0.4rem;"></i>April 2025 – Present</div>
+        <ul class="timeline-list">
+          <li>Manage, validate, and maintain large datasets related to cybercrime investigations using Microsoft Excel and Google Sheets.</li>
+          <li>Ensure data accuracy, compliance, and timely information delivery for banks, law enforcement agencies, and stakeholders.</li>
+          <li>Perform Quality Assurance (QA) on user-provided datasets, validating accuracy and consistency with strong attention to detail.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-eyebrow">Work Showcase</div>
+  <h2 class="section-title">Projects &amp; <span>Achievements</span></h2>
+  <div class="projects-grid">
+
+    <div class="project-card fade-up">
+      <div class="project-number">PROJECT / 01</div>
+      <h3 class="project-title">Diwali Sales Analysis — EDA</h3>
+      <p class="project-desc">Deep-dive Exploratory Data Analysis on retail datasets to identify customer purchasing patterns, outliers, and seasonal trends.</p>
+      <div>
+        <span class="project-metric"><i class="fas fa-chart-pie"></i> 70%+ Sales Attribution</span>
+        <span class="project-metric"><i class="fas fa-users"></i> Customer Segmentation</span>
+      </div>
+      <div class="project-tags">
+        <span class="project-tag">Python</span>
+        <span class="project-tag">Pandas</span>
+        <span class="project-tag">NumPy</span>
+        <span class="project-tag">Matplotlib</span>
+        <span class="project-tag">Seaborn</span>
+      </div>
+      <!-- 🔗 ADD YOUR LINKS BELOW: replace # with your actual URL -->
+      <div class="project-links">
+        <a href="https://github.com/muhammadmusaib/Diwali-Sales-Exploratory-Data-Analysis-EDA-project./blob/main/Diwali_sales_analysis.ipynb" class="project-link-btn github" title="Add your GitHub link here">
+          <i class="fab fa-github"></i> Github Link
+        </a>
+        <!-- <a href="https://github.com/muhammadmusaib/Diwali-Sales-Exploratory-Data-Analysis-EDA-project./blob/main/Diwali_sales_analysis.ipynb" class="project-link-btn live placeholder" title="Add your live/notebook link here">
+          <i class="fas fa-external-link-alt"></i> Live / Notebook
+        </a> -->
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-number">PROJECT / 02</div>
+      <h3 class="project-title">Vrinda Store Data Analysis</h3>
+      <p class="project-desc">Interactive Excel Dashboard revealing sales performance, customer behavior, and business KPIs through dynamic Pivot Tables and automation.</p>
+      <div>
+        <span class="project-metric"><i class="fas fa-tachometer-alt"></i> KPI Dashboard</span>
+        <span class="project-metric"><i class="fas fa-robot"></i> Reporting Automation</span>
+      </div>
+      <div class="project-tags">
+        <span class="project-tag">Excel</span>
+        <span class="project-tag">Pivot Tables</span>
+        <span class="project-tag">Slicers</span>
+        <span class="project-tag">Advanced Formulas</span>
+      </div>
+      <!-- 🔗 ADD YOUR LINKS BELOW -->
+      <div class="project-links">
+        <a href="https://github.com/muhammadmusaib/Vrinda-sales-data-analysis" class="project-link-btn github" title="Add your GitHub link here">
+          <i class="fab fa-github"></i> Github Link
+        </a>
+        <!-- <a href="#" class="project-link-btn live placeholder" title="Add your Excel/Drive link here">
+          <i class="fas fa-external-link-alt"></i> View Dashboard
+        </a> -->
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-number">PROJECT / 03</div>
+      <h3 class="project-title">Pizza Sales Analysis</h3>
+      <p class="project-desc">Full analytics pipeline on 49K+ sales records to compute business KPIs — Revenue, Orders, Quantity, Average Order Value — with interactive Power BI dashboards.</p>
+      <div>
+        <span class="project-metric"><i class="fas fa-pizza-slice"></i> 49K+ Records</span>
+        <span class="project-metric"><i class="fas fa-dollar-sign"></i> 46% Revenue from L-size</span>
+      </div>
+      <div class="project-tags">
+        <span class="project-tag">SQL</span>
+        <span class="project-tag">Power BI</span>
+        <span class="project-tag">DAX</span>
+        <span class="project-tag">ELT</span>
+      </div>
+      <!-- 🔗 ADD YOUR LINKS BELOW -->
+      <div class="project-links">
+        <a href="https://github.com/muhammadmusaib/Pizza-Sales-Analysis-SQL-PowerBI" class="project-link-btn github" title="Add your GitHub link here">
+          <i class="fab fa-github"></i> Github Link
+        </a>
+        <!-- <a href="#" class="project-link-btn live placeholder" title="Add your Power BI report link here">
+          <i class="fas fa-external-link-alt"></i> Power BI Report
+        </a> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-eyebrow">Capabilities</div>
+  <h2 class="section-title">Skills <span>Dashboard</span></h2>
+  <div class="skills-wrapper">
+    <div>
+      <div class="skill-group-title">Data &amp; Programming</div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">Python (Pandas, NumPy)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">SQL (MySQL, PostgreSQL)</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">Microsoft Excel</span><span class="skill-pct">90%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">Google Sheets</span><span class="skill-pct">82%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-group-title">Visualization &amp; BI</div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">Power BI (DAX, Dashboards)</span><span class="skill-pct">82%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">Tableau</span><span class="skill-pct">72%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">Matplotlib / Seaborn</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info"><span class="skill-name">HTML / CSS / JavaScript</span><span class="skill-pct">60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="skill-group-title">Tools &amp; Technologies</div>
+  <div class="tools-grid">
+    <div class="tool-chip"><i class="fab fa-python"></i>Python</div>
+    <div class="tool-chip"><i class="fas fa-database"></i>MySQL</div>
+    <div class="tool-chip"><i class="fas fa-database"></i>PostgreSQL</div>
+    <div class="tool-chip"><i class="fas fa-file-excel"></i>MS Excel</div>
+    <div class="tool-chip"><i class="fas fa-chart-bar"></i>Power BI</div>
+    <div class="tool-chip"><i class="fas fa-chart-area"></i>Tableau</div>
+    <div class="tool-chip"><i class="fab fa-git-alt"></i>Git</div>
+    <div class="tool-chip"><i class="fab fa-github"></i>GitHub</div>
+    <div class="tool-chip"><i class="fab fa-html5"></i>HTML/CSS</div>
+    <div class="tool-chip"><i class="fas fa-table"></i>Google Sheets</div>
+    <div class="tool-chip"><i class="fas fa-brain"></i>AI Analysis</div>
+    <div class="tool-chip"><i class="fas fa-code"></i>Jupyter</div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- STRENGTHS -->
+<section>
+  <div class="section-eyebrow">Core Strengths</div>
+  <h2 class="section-title">Key <span>Strengths</span></h2>
+  <div class="strengths-grid">
+    <div class="strength-chip fade-up"><i class="fas fa-microscope"></i> Analytical Thinking</div>
+    <div class="strength-chip fade-up"><i class="fas fa-puzzle-piece"></i> Problem Solving</div>
+    <div class="strength-chip fade-up"><i class="fas fa-comments"></i> Communication</div>
+    <div class="strength-chip fade-up"><i class="fas fa-chart-line"></i> Statistical Analysis</div>
+    <div class="strength-chip fade-up"><i class="fas fa-eye"></i> Attention to Detail</div>
+    <div class="strength-chip fade-up"><i class="fas fa-check-double"></i> Quality Assurance</div>
+    <div class="strength-chip fade-up"><i class="fas fa-shield-alt"></i> Data Compliance</div>
+    <div class="strength-chip fade-up"><i class="fas fa-sync-alt"></i> Continuous Learning</div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-eyebrow">Credentials</div>
+  <h2 class="section-title">Certifi<span>cations</span></h2>
+  <div class="cert-grid">
+
+    <div class="cert-card fade-up">
+      <div class="cert-top">
+        <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+        <div>
+          <div class="cert-title">Power BI Certification</div>
+          <div class="cert-issuer">Shri Ram Institute of Technology</div>
+        </div>
+      </div>
+      <!-- 🔗 ADD CERTIFICATE LINK: replace # with your credential URL -->
+      <a href="https://drive.google.com/file/d/1PB_iSw44Xa-flvZ6yKOEP_4d_Iz4C9YK/view" class="cert-link-btn" title="Add your certificate link here">
+        <i class="fas fa-external-link-alt"></i> View Certificate
+      </a>
+    </div>
+
+    <div class="cert-card fade-up">
+      <div class="cert-top">
+        <div class="cert-icon"><i class="fas fa-code"></i></div>
+        <div>
+          <div class="cert-title">SQL Intermediate Certification</div>
+          <div class="cert-issuer">HackerRank</div>
+        </div>
+      </div>
+      <!-- 🔗 ADD CERTIFICATE LINK -->
+      <a href="https://www.hackerrank.com/certificates/iframe/beb3333800c1" class="cert-link-btn" title="Add your HackerRank certificate link here">
+        <i class="fas fa-external-link-alt"></i> View Certificate
+      </a>
+    </div>
+
+    <div class="cert-card fade-up">
+      <div class="cert-top">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div>
+          <div class="cert-title">AI-Powered Data Analysis</div>
+          <div class="cert-issuer">Code With Harry</div>
+        </div>
+      </div>
+      <!-- 🔗 ADD CERTIFICATE LINK -->
+      <a href="https://drive.google.com/file/d/1uKnJPUJDqF_O4-yibo-uel3nw4PT7Yhb/view" class="cert-link-btn" title="Add your certificate link here">
+        <i class="fas fa-external-link-alt"></i> View Certificate
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- EDUCATION -->
+<section>
+  <div class="section-eyebrow">Academic Background</div>
+  <h2 class="section-title">Edu<span>cation</span></h2>
+  <div class="edu-grid">
+    <div class="edu-card fade-up">
+      <div class="edu-degree">Bachelor of Technology (B.Tech)</div>
+      <div class="edu-field">Electronics &amp; Communication Engineering</div>
+      <div class="edu-school">Shri Ram Institute of Technology</div>
+      <div class="edu-meta">
+        <span class="edu-badge">CGPA: 7.81</span>
+        <span class="edu-badge">2020 – 2024</span>
+      </div>
+    </div>
+    <div class="edu-card fade-up">
+      <div class="edu-degree">Higher Secondary Certificate</div>
+      <div class="edu-field">Physics, Chemistry &amp; Mathematics</div>
+      <div class="edu-school">Shri Guru Nanak English Medium School</div>
+      <div class="edu-meta">
+        <span class="edu-badge">PCM Stream</span>
+        <span class="edu-badge">2019 – 2020</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CAREER GOALS -->
+<section>
+  <div class="section-eyebrow">Vision</div>
+  <h2 class="section-title">Career <span>Goals</span></h2>
+  <div class="goals-card">
+    <div class="goal-item fade-up">
+      <div class="goal-num">01</div>
+      <div class="goal-text">
+        <h4>Master Advanced Analytics</h4>
+        <p>Deepen expertise in machine learning and predictive modeling to move beyond descriptive analytics into forecasting and prescriptive intelligence.</p>
+      </div>
+    </div>
+    <div class="goal-item fade-up">
+      <div class="goal-num">02</div>
+      <div class="goal-text">
+        <h4>Build Real-Time Dashboards</h4>
+        <p>Create live, streaming data pipelines and dashboards that help organizations react to trends the moment they emerge.</p>
+      </div>
+    </div>
+    <div class="goal-item fade-up">
+      <div class="goal-num">03</div>
+      <div class="goal-text">
+        <h4>Contribute to Impactful Domains</h4>
+        <p>Apply data analytics to domains with societal impact — public safety, fintech, or healthcare — where insights translate directly to better outcomes.</p>
+      </div>
+    </div>
+    <div class="goal-item fade-up">
+      <div class="goal-num">04</div>
+      <div class="goal-text">
+        <h4>Grow Into a Data Lead</h4>
+        <p>Develop leadership skills to guide data teams, define analytics strategy, and connect business goals with data-driven execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CONTACT -->
+<section id="contact" style="padding: 6rem 5%;">
+  <div class="contact-section">
+    <div class="contact-ring"></div>
+    <div class="contact-ring"></div>
+    <div class="contact-ring"></div>
+    <div class="contact-inner">
+      <h2 class="contact-title">Let's Build Something Together</h2>
+      <p class="contact-subtitle">Open to Data Analyst roles, internships, and freelance analytics projects.</p>
+      <div class="contact-links">
+        <a href="mailto:musaibkhan5858@gmail.com" class="contact-link email-link">
+          <i class="fas fa-envelope"></i> musaibkhan5858@gmail.com
+        </a>
+        <a href="tel:+917725077601" class="contact-link">
+          <i class="fas fa-phone"></i> +91 7725077601
+        </a>
+        <a href="https://wa.me/917725077601" target="_blank" class="contact-link whatsapp-link">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/themusaibkhan/" target="_blank" class="contact-link linkedin-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/muhammadmusaib" target="_blank" class="contact-link github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <a href="mailto:musaibkhan5858@gmail.com" class="btn-primary" style="display:inline-flex;">
+        <i class="fas fa-paper-plane"></i> Send Me a Message
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Designed &amp; built for <span>Mohd Musaib</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
